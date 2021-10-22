@@ -1,3 +1,4 @@
 flask
-flask_sqlalchemy
 flask_session
+cs50
+functools
