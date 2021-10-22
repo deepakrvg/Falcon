@@ -1,0 +1,78 @@
+.log {
+  margin: auto;
+  width: 200px;
+}
+
+.log div {
+  margin-top: 20px;
+}
+
+.tweet {
+  margin: auto;
+  width: 500px;
+}
+
+.tweet-label {
+  display: block;
+  width: 500px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.posts {
+  text-align: center;
+}
+
+.username {
+  display: inline-block;
+  width: 100px;
+  font-size: 1.8rem;
+}
+
+.title,
+.post {
+  width: 30%;
+  margin: auto;
+  margin-bottom: 2px;
+  border: solid 1px rgb(197, 190, 190);
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.left {
+  display: inline-block;
+  width: 30%;
+  text-align: left;
+  margin-left: 5px;
+  opacity: 0.6;
+}
+
+.id,
+.time {
+  display: inline-block;
+  width: 15%;
+  opacity: 0.7;
+}
+
+.id {
+  text-align: left;
+}
+
+.time {
+  text-align: right;
+}
+
+.hr_line {
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 50%;
+}

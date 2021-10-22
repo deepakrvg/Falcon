@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Posts
+{% endblock %}
+
+{% block main %}
+    <nav class="container overflow-hidden">
+        <ul class="row gx-5">
+            <li class="col p-3 border bg-light"><a href="/posts">See Posts</a></li>
+            <li class="col p-3 border bg-light"><a href="/add">Add a Post</a></li>
+            <li class="col p-3 border bg-light"><a href="/delete">Delete a Post</a></li>
+        </ul>
+    </nav>
+
+    <section class="posts">
+        {% for post in posts %}
+            <p><strong class="username">@ {{ post.name }}</strong></p>
+            <span class="left">Title: </span><p class="title">{{ post.title }}</p>
+            <span class="left">Post: </span><p class="post">{{ post.text }}</p>
+            <span class="id">Post Id: {{ post.id }}</span>
+            <span class="time">Time: {{ post.time }}</span>   
+            <hr class="hr_line">     
+        {% endfor %}
+    </section>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Delete Post
+{% endblock %}
+
+{% block main %}
+
+<nav class="container overflow-hidden">
+  <ul class="row gx-5">
+      <li class="col p-3 border bg-light"><a href="/posts">See Posts</a></li>
+      <li class="col p-3 border bg-light"><a href="/add">Add a Post</a></li>
+      <li class="col p-3 border bg-light"><a href="/delete">Delete a Post</a></li>
+  </ul>
+</nav>
+
+<form action="/delete" method="post">
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label tweet-label">Post Number</label>
+    <input type="number" class="form-control tweet" name="id" id="exampleFormControlInput1" placeholder="Post Number" required>
+  </div>
+
+  <div class="form-group log">
+    <button style="margin-left: 80px;" class="btn btn-primary" type="submit">Delete</button>
+  </div>
+</form>
+{% endblock %}

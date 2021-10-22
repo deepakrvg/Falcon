@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<section class="posts">
+    {% for post in posts %}
+        <p><strong class="username">@ {{ post.name }}</strong></p>
+        <span class="left">Title: </span><p class="title">{{ post.title }}</p>
+        <span class="left">Post: </span><p class="post">{{ post.text }}</p>
+        <span class="id">Post Id: {{ post.id }}</span>
+        <span class="time">Time: {{ post.time }}</span>   
+        <hr class="hr_line">     
+    {% endfor %}
+</section>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Add Post
+{% endblock %}
+
+{% block main %}
+
+<nav class="container overflow-hidden">
+  <ul class="row gx-5">
+      <li class="col p-3 border bg-light"><a href="/posts">See Posts</a></li>
+      <li class="col p-3 border bg-light"><a href="/add">Add a Post</a></li>
+      <li class="col p-3 border bg-light"><a href="/delete">Delete a Post</a></li>
+  </ul>
+</nav>
+
+<form action="/add" method="post">
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label tweet-label">Title</label>
+    <input type="text" class="form-control tweet" name="title" id="exampleFormControlInput1" placeholder="title" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label tweet-label">Post</label>
+    <textarea class="form-control tweet" id="exampleFormControlTextarea1" name="text" placeholder="Enter text here..." rows="3" required></textarea>
+  </div>
+
+  <div class="form-group log">
+    <button style="margin-left: 80px;" class="btn btn-primary" type="submit">Post</button>
+  </div>
+</form>
+{% endblock %}
